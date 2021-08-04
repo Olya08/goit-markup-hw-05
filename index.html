@@ -61,7 +61,9 @@
 
       <section class="hero overlay">
         <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button primary pointer">Заказать услугу</button>
+        <button type="button" class="button primary pointer" data-modal-open>
+          Заказать услугу
+        </button>
       </section>
 
       <!-- Advantages-->
@@ -433,5 +435,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="icon-box" data-modal-close>
+          <svg class="icon-close">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

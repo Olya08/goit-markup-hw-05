@@ -432,13 +432,13 @@ button.primary {
 
 .network-link {
   fill: var(--icons-color);
+  border-radius: 50%;
 
   transition: background-color var(--main-transition), fill var(--main-transition);
 }
 
 .network-link:hover,
 .network-link:focus {
-  border-radius: 50%;
   background-color: var(--accent);
   fill: var(--primary-white-color);
 }
@@ -550,13 +550,12 @@ button.primary {
 
 .network-link-bottom {
   fill: var(--primary-white-color);
-
+  border-radius: 50%;
   transition: background-color var(--main-transition), border-radius var(--main-transition);
 }
 
 .network-link-bottom:hover,
 .network-link-bottom:focus {
-  border-radius: 50%;
   background-color: var(--accent);
 }
 
@@ -650,7 +649,7 @@ button.primary {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
+  transform: translateY(101%);
 
   transition: transform var(--main-transition), opacity var(--main-transition);
 }

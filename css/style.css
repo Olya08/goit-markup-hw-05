@@ -120,9 +120,9 @@ img {
   content: '';
   position: absolute;
   width: 100%;
-  border: 2px solid var(--accent);
+  border: solid var(--accent);
   border-radius: 2px;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 }
 

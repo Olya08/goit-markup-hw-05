@@ -33,6 +33,14 @@ body {
   padding-right: 15px;
 }
 
+.hero-container {
+  margin-left: 0;
+  margin-right: 0;
+  width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -337,11 +345,13 @@ button.primary {
 
 .work-pics-box {
   position: absolute;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   bottom: 0;
   left: 0;
-  display: inline-block;
   width: 100%;
-  padding: 27px 82px 27px 83px;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
@@ -423,8 +433,7 @@ button.primary {
 .network-link {
   fill: var(--icons-color);
 
-  transition: background-color var(--main-transition), fill var(--main-transition),
-    border-radius var(--main-transition);
+  transition: background-color var(--main-transition), fill var(--main-transition);
 }
 
 .network-link:hover,
@@ -474,7 +483,7 @@ button.primary {
   height: 60px;
   fill: var(--icons-color);
 
-  transition: fill var(--main-transition);
+  transition: border var(--main-transition);
 }
 .company:hover,
 .company:focus {
@@ -643,11 +652,13 @@ button.primary {
 
   transform: translateY(100%);
 
-  transition: transform var(--main-transition);
+  transition: transform var(--main-transition), opacity var(--main-transition);
 }
 
-.portfolio-item:hover .portfolio-overlay {
+.portfolio-item:hover .portfolio-overlay,
+.portfolio-item:focus .portfolio-overlay {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .portfolio-text {
@@ -685,7 +696,7 @@ button.primary {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--main-transition), opacity var(--main-transition);
 }
 
 .backdrop.is-hidden {

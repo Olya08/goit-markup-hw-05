@@ -628,6 +628,7 @@ button.primary {
 .card-bottom {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 /* Overlay */
